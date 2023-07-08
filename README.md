@@ -41,6 +41,9 @@ Marina Khizgilov
 Omri Ben Altabe  
 
 ### Contributors
-Raz Margi  
+Mr. Raz Margi  
 Dr. Arielle Fischer  
 
+### Instructors: 
+Mr. Tom Sofer  
+Mr. Tomer Ron  
