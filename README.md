@@ -50,4 +50,4 @@ Mr. Tomer Ron
 
 
 ![WhatsApp Image 2023-07-08 at 13 15 00](https://github.com/nikolro/Motion-System-IOT/assets/57406005/edf5b82a-a7b9-4d7e-a1ca-fbd9d801a42c)
-The whole team in the CS project fair
+The team in the CS project fair
