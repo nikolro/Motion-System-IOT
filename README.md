@@ -1,6 +1,7 @@
 # Motion system
 ### IOT project
 Movement simulation and analysis PC-based app for windsurfing athletes and trainers.  
+
 <img width="737" alt="Screenshot 2023-07-08 124324" src="https://github.com/nikolro/Motion-System-IOT/assets/57406005/039dbf20-275b-453d-81fe-58688533d629">
 
 ## Description
