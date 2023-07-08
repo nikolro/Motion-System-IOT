@@ -16,7 +16,8 @@ Features:
   _ProjectSettings – configuration settings of the project.
 
 ## Project Poster
-[10 - IOT poster.pdf](https://github.com/nikolro/Motion-System-IOT/files/11990339/10.-.IOT.poster.pdf)
+![Slide1](https://github.com/nikolro/Motion-System-IOT/assets/57406005/2afc003c-e78b-45bd-9c14-47dd17624e09)
+
 
 ## Creators
 Nikol Roshrosh
