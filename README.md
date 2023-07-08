@@ -24,6 +24,13 @@ Created in collaboration with the Biomechanics Lab of the faculty of Biomedical 
   * Packages – Packages installed and used in the project, that contains pre-build sets of code, assets, and functionality
   * ProjectSettings – configuration settings of the project
 
+## How to use
+1. Clone Project
+2. Run app/MotionSystem.exe
+3. Chose .CSV data file and .mp4 video of training session
+4. Press Play
+5. ENJOY
+
 ## Project Poster
 ![Slide1](https://github.com/nikolro/Motion-System-IOT/assets/57406005/2afc003c-e78b-45bd-9c14-47dd17624e09)
 
