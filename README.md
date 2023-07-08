@@ -10,11 +10,11 @@ Created in collaboration with the Biomechanics Lab of the faculty of Biomedical 
 •	
 
 ## GitHub Contents
-* App –  
-*	Unity_files –  
-  * Assets – Items that are used for the project: Code files, pictures, themes, fonts etc.   
-  * Packages – Packages installed and used in the project, that contains pre-build sets of code, assets, and functionality.   
-  * ProjectSettings – configuration settings of the project.  
+* App –
+* Unity_files –
+  * Assets – Items that are used for the project: Code files, pictures, themes, fonts etc.
+  * Packages – Packages installed and used in the project, that contains pre-build sets of code, assets, and functionality.
+  * ProjectSettings – configuration settings of the project.
 
 ## Project Poster
 ![Slide1](https://github.com/nikolro/Motion-System-IOT/assets/57406005/2afc003c-e78b-45bd-9c14-47dd17624e09)
@@ -29,8 +29,3 @@ Omri Ben Altabe
 Raz Margi  
 Dr. Arielle Fischer  
 
-* Item 1
-* Item 2
-* Item 3
-  * Sub Item A
-  * Sub Item B
