@@ -22,7 +22,7 @@ Created in collaboration with the Biomechanics Lab of the faculty of Biomedical 
 * Unity_files – Unity project files.
   * Assets – Items that are used for the project: Code files, pictures, themes, fonts etc.
   * Packages – Packages installed and used in the project, that contains pre-build sets of code, assets, and functionality.
-  * ProjectSettings – configuration settings of the project.
+  * ProjectSettings – Configuration settings of the project.
 
 ## How to use
 1. Clone Project
