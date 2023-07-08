@@ -1,5 +1,5 @@
 # Motion system
-## IOT project
+### IOT project
 Movement simulation and analysis PC-based app for windsurfing athletes and trainers.  
 Pic of the app
 
