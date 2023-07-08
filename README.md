@@ -30,7 +30,7 @@ Created with Unity.
   * ProjectSettings – Configuration settings of the project.
 
 ## How to use
-1. Clone Project
+1. Clone project
 2. Run app/MotionSystem.exe
 3. Chose .CSV data file and .mp4 video of training session
 4. Press Play
