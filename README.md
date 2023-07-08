@@ -8,7 +8,9 @@ Movement simulation and analysis PC-based open-source app, for windsurfing athle
 Created in collaboration with the Biomechanics Lab of the faculty of Biomedical Engineering, Technion – this app aims so assist trainers and athletes of the Israeli National Olympic windsurfing team with analysing and improving performance and skills.  
 
 Data for the app is collected using Xsense DOT wearable sensors:  
-https://www.movella.com/products/wearables/movella-dot
+https://www.movella.com/products/wearables/movella-dot  
+
+Created with Unity.
 
 ### Features:
 * 3D Avatar model
@@ -33,6 +35,11 @@ https://www.movella.com/products/wearables/movella-dot
 3. Chose .CSV data file and .mp4 video of training session
 4. Press Play
 5. ENJOY
+
+## For future expansion of the project:
+1. Clone project
+2. Download Unity: https://unity.com/download
+3. Open unity_files project with unity app
 
 ## Project Poster
 ![Slide1](https://github.com/nikolro/Motion-System-IOT/assets/57406005/2afc003c-e78b-45bd-9c14-47dd17624e09)
