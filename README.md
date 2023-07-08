@@ -7,7 +7,7 @@ Movement simulation and analysis PC-based open-source app, for windsurfing athle
 ## Description
 Created in collaboration with the Biomechanics Lab of the faculty of Biomedical Engineering, Technion – this app aims so assist trainers and athletes of the Israeli National Olympic windsurfing team with analysing and improving performance and skills.  
 
-Data for the app is collected using Xsense DOT wearable sensors: 
+Data for the app is collected using Xsense DOT wearable sensors:  
 https://www.movella.com/products/wearables/movella-dot
 
 ### Features:
