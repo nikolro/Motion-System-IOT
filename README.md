@@ -8,7 +8,14 @@ Movement simulation and analysis PC-based app for windsurfing athletes and train
 Created in collaboration with the Biomechanics Lab of the faculty of Biomedical Engineering, Technion – this app aims so assist trainers and athletes of the Israeli national Olympic team with analysing and improving windsurfing performance and skills.  
 
 ### Features:
-•	
+* 3D Avatar model
+* Video display of athlete
+* Change playback speed
+* File browser
+* Control buttons – Play/Pause/Restart/Exit
+* User interaction with the 3D model – Zoom in/Zoom out and rotation
+* Data display – Joint angles, accelerations, speed
+* Manual synchronization
 
 ## GitHub Contents
 * App –
