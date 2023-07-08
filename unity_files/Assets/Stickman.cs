@@ -7,6 +7,9 @@ using SFB;
 using TMPro;
 using UnityEngine.Video;
 
+/*  This file responsible to read the data from a given 'csv' file.
+    Creating a avatar that models the surfer and fills the information values.
+*/
 
 public class Stickman : MonoBehaviour
 {
@@ -57,12 +60,14 @@ public class Stickman : MonoBehaviour
 
     public int currentIndex;
 
+    
     private void Start()
     {
         buttons = GameObject.Find("Buttons").GetComponent<Buttons>();
 
         stickman = GameObject.Find("Stickman");
 
+        // creating objects for the joints
         P_mtp_toes_r = new GameObject("P_mtp_toes_r");
         P_subt_calc_r = new GameObject("P_subt_calc_r");
         P_Ankle_tal_r = new GameObject("P_Ankle_tal_r");
@@ -154,6 +159,7 @@ public class Stickman : MonoBehaviour
         ball.transform.parent = all_balls.transform;
         }
 
+        /*
         GameObject xAxis = new GameObject("Axis");
         LineRenderer = xAxis.AddComponent<LineRenderer>();
         LineRenderer.material = new Material(Shader.Find("Sprites/Default"));
@@ -161,6 +167,7 @@ public class Stickman : MonoBehaviour
         LineRenderer.endColor = Color;
         LineRenderer.startWidth = 0.02f;
         LineRenderer.endWidth = 0.02f;
+        */
 
         Application.targetFrameRate = Mathf.RoundToInt(1.0f / 0.0167f);
         QualitySettings.vSyncCount = 0;
@@ -169,6 +176,7 @@ public class Stickman : MonoBehaviour
 
     }
 
+    // updating the data and avatar each frame, if the video is playing
     private void Update()
     {  
         if (buttons.play_clicked==true)
@@ -183,7 +191,7 @@ public class Stickman : MonoBehaviour
         }
     }
 
-
+    
     public void UpdateCoordinates(int Index)
     {
         Vector3 pc_total_position=new Vector3(0, 0, 0);
@@ -202,16 +210,19 @@ public class Stickman : MonoBehaviour
                     
                     float max_acc=0.1f;
                     float min_acc=0.02f;
-                    if(i==58)
+                    if(i==58) // columns 58-64 are creating the center of mass point and vector
                     {
+                    /*    
                     pc_total_position=new Vector3(x, y, z);
                     LineRenderer.SetPosition(0, pc_total_position);
+                    */
                     }
                     else if(i==61)
                     {
+                        /*
                         float acc_size =Mathf.Sqrt(x*x + y*y + z*z);
                         if(acc_size < min_acc){
-                            if(acc_size < 0.05f){ // check VAL *
+                            if(acc_size < 0.01f){ // check VAL *
                                 acc_size = 0.0f;
                             } else {
                                 acc_size = min_acc;
@@ -222,12 +233,9 @@ public class Stickman : MonoBehaviour
                         float norm_x = x*acc_size;
                         float norm_y = y*acc_size;
                         float norm_z = z*acc_size;
-                        
-                        //Vector3 acc_total_position=new Vector3(x/20.0f,y/20.0f,z/20.0f);
-                        //Vector3 acc_total_position=new Vector3(norm_x,norm_y,norm_z);
-                        //acc_total_position=SetAccPositon(acc_total_position);
                         Vector3 acc_total_position = new Vector3((norm_x)+pc_total_position.x, (norm_y)+pc_total_position.y, (norm_z)+pc_total_position.z);
                         LineRenderer.SetPosition(1, acc_total_position);
+                        */
                     }
                     else
                     {
@@ -269,6 +277,7 @@ public class Stickman : MonoBehaviour
                 lineRenderer_middle.SetPosition(1, P_Torso.transform.position);
     }
 
+    // update the data information surround the avatar each frame
     public void UpdateData(int Index)
     {
         string[] values = lines[Index].Split(',');
@@ -314,6 +323,7 @@ public class Stickman : MonoBehaviour
         Button wind_direction = SurfingData.Find("wind direction -value").GetComponent<Button>();
         wind_direction.GetComponentInChildren<Text>().text = float.Parse(values[107]).ToString();
 
+        
         if(first_line.Length==109)
         {
             Button t1=SurfingData.Find("t1").GetComponent<Button>();
@@ -378,37 +388,4 @@ public class Stickman : MonoBehaviour
         currentIndex++;
 
     }
-
-Vector3 SetAccPositon(Vector3 acc_total)
-    {
-        float max_acc=0.0015f;
-        float min_acc=0.02f;
-
-        if(acc_total.x>max_acc) {
-            acc_total.x=max_acc;
-        }
-        
-        if(acc_total.y>max_acc) {
-            acc_total.y=max_acc;
-        }
-
-        if(acc_total.z>max_acc) {
-            acc_total.z=max_acc;
-        }
-
-        if(acc_total.x<min_acc) {
-            acc_total.x=min_acc;
-        }
-        
-        if(acc_total.y<min_acc) {
-            acc_total.y=min_acc;
-        }
-        
-        if(acc_total.z<min_acc) {
-            acc_total.z=min_acc;
-        }
-        return acc_total;
-        
-    }
-
 }

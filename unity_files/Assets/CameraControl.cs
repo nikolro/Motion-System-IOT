@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/* 
+    This file responsible to handle the camera in the avatar scene.
+    conrolling the movments, rotation and the zoom.
+*/
+
 public class CameraControl : MonoBehaviour
 {
     public GameObject parentModel;
@@ -26,6 +32,7 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //mousebuttom 1 controll movment in the scene
         if (Input.GetMouseButton(1))
         {
             CamOrbit();
@@ -34,6 +41,7 @@ public class CameraControl : MonoBehaviour
         {
             FitToScreen();
         }
+        //mousebuttom 2 controll rotation in the scene
         if(Input.GetMouseButtonDown(2)&& !Input.GetKey(KeyCode.LeftShift))
         {
             mouseWorldPosStart=GetPerspectivePos();
@@ -42,9 +50,11 @@ public class CameraControl : MonoBehaviour
         {
             Pan();
         }
+        //mousebuttom 3 (scrollWheel) controll zoom in the scene
         Zoom(Input.GetAxis("Mouse ScrollWheel"));
     }
 
+    // get the mouse position data and rotate accordingly
     private void CamOrbit()
     {
         if (Input.GetAxis("Mouse Y") != 0 || Input.GetAxis("Mouse X") != 0)
@@ -55,6 +65,7 @@ public class CameraControl : MonoBehaviour
             transform.Rotate(Vector3.up,horizontalInput,Space.World);
         }
     }
+
     private Bounds GetBound(GameObject parentGameObj)
     {
         Bounds bound = new Bounds(parentGameObj.transform.position, Vector3.zero);
@@ -66,6 +77,7 @@ public class CameraControl : MonoBehaviour
         return bound;
     }
 
+    // fit the scene view to the user screen
     public void FitToScreen()
     {
         camera.fieldOfView=defaultFieldOfView;
@@ -96,6 +108,7 @@ public class CameraControl : MonoBehaviour
         }
     }
 
+    // get the camera position to set the zoom accordingly
     public Vector3 GetPerspectivePos()
     {
         Ray ray=camera.ScreenPointToRay(Input.mousePosition);

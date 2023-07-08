@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
+
+/* 
+    This file responsible to add and control the time slider under the video
+*/
 public class SliderScript : MonoBehaviour
 {
     [SerializeField] public Slider videoSlider; 
@@ -15,7 +19,7 @@ public class SliderScript : MonoBehaviour
     {
         stickman = GameObject.Find("Stickman").GetComponent<Stickman>();  
         buttons= GameObject.Find("Buttons").GetComponent<Buttons>();  
-
+        // creating the object for the slider
         GameObject slidersCanvasObject = GameObject.Find("SlidersCanvas");
         Transform videoSliderTransform = slidersCanvasObject.transform.Find("VideoSlider");
         videoSlider = videoSliderTransform.GetComponent<Slider>();
@@ -25,6 +29,7 @@ public class SliderScript : MonoBehaviour
         videoSlider.onValueChanged.AddListener(OnSliderValueChanged);  
     }
 
+    // updates the indicator on the slider according to the time passed since the video start
     void Update()
     {
         timeText.text = FormatTime(videoPlayer.time) + " / " + FormatTime(videoPlayer.length);
@@ -36,6 +41,7 @@ public class SliderScript : MonoBehaviour
         }
     }
 
+    // reset the video and data according to the slider indicator's location 'on click'
     void OnSliderValueChanged(float value)
     {
         videoPlayer.Pause();
