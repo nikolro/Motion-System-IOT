@@ -20,10 +20,10 @@ Features:
 
 
 ## Creators
-Nikol Roshrosh
-Marina Khizgilov
-Omri Ben Altabe
+Nikol Roshrosh  
+Marina Khizgilov  
+Omri Ben Altabe  
 
 Contributors
-Raz Margi 
-Dr. Arielle Fischer
+Raz Margi  
+Dr. Arielle Fischer  
