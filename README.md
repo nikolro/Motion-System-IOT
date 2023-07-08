@@ -1,7 +1,7 @@
 # Motion system
 ### IOT project
 Movement simulation and analysis PC-based app for windsurfing athletes and trainers.  
-Pic of the app
+<img width="737" alt="Screenshot 2023-07-08 124324" src="https://github.com/nikolro/Motion-System-IOT/assets/57406005/039dbf20-275b-453d-81fe-58688533d629">
 
 ## Description
 Created in collaboration with the Biomechanics Lab of the faculty of Biomedical Engineering, Technion – this app aims so assist trainers and athletes of the Israeli national Olympic team with analysing and improving windsurfing performance and skills.  
