@@ -25,6 +25,6 @@ Nikol Roshrosh
 Marina Khizgilov  
 Omri Ben Altabe  
 
-Contributors
+### Contributors
 Raz Margi  
 Dr. Arielle Fischer  
