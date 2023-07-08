@@ -44,7 +44,7 @@ Omri Ben Altabe
 Mr. Raz Margi  
 Dr. Arielle Fischer  
 
-### Instructors: 
+### Instructors 
 Mr. Tom Sofer  
 Mr. Tomer Ron  
 
